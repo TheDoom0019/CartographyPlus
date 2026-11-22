@@ -1,0 +1,59 @@
+name: 问题反馈 / Bug report
+description: 游戏崩溃、功能异常、界面错位
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量把下面的信息填全，否则很难复现。
+  - type: input
+    id: mc
+    attributes:
+      label: Minecraft 版本
+      placeholder: "1.21.1"
+    validations:
+      required: true
+  - type: input
+    id: neoforge
+    attributes:
+      label: NeoForge 版本
+      placeholder: "21.1.242"
+    validations:
+      required: true
+  - type: input
+    id: modver
+    attributes:
+      label: Cartography Plus 版本
+      placeholder: "0.13.8"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么
+      description: 越具体越好，比如"打开揭示页后地图槽的物品跑到左上角"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 放置制图台
+        2. 放入最大地图 + 64 骨头 + 广域之眼
+        3. 点击揭示
+        4. 游戏卡住 / 崩溃
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志
+      description: 把 `logs/latest.log` 或崩溃报告拖进来
+      render: shell
+  - type: textarea
+    id: other
+    attributes:
+      label: 其他模组
+      description: 装了哪些可能相关的模组（JEI、Create、优化类等）
