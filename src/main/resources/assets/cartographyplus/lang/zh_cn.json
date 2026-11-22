@@ -1,0 +1,21 @@
+{
+  "cartographyplus.page.expand": "扩大",
+  "cartographyplus.page.split": "拆分",
+  "cartographyplus.page.reveal": "揭示",
+  "cartographyplus.button.reveal": "揭示 %s级",
+  "cartographyplus.result.split": "%s 张地图",
+  "cartographyplus.revealed_name": "已揭示的地图",
+  "cartographyplus.scan.done": "广域之眼：%s 个敌怪发光，%s 个容器高亮",
+  "cartographyplus.scan.chest": "箱子",
+  "cartographyplus.anchor.0": "原版",
+  "cartographyplus.anchor.1": "玩家",
+  "cartographyplus.anchor.2": "左上",
+  "cartographyplus.anchor.3": "右上",
+  "cartographyplus.anchor.4": "左下",
+  "cartographyplus.anchor.5": "右下",
+  "cartographyplus.button.reveal_short": "揭示",
+  "cartographyplus.reveal.busy": "已有一张地图正在揭示，等它完成",
+  "cartographyplus.reveal.started": "广域之眼开始扫描 %s 个区块",
+  "cartographyplus.reveal.done": "揭示完成，补全 %s 个像素",
+  "item.cartographyplus.wide_eye": "广域之眼"
+}
