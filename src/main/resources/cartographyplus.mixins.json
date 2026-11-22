@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mcm.cartographyplus.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CartographyTableBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
