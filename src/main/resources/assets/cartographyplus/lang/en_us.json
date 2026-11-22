@@ -1,0 +1,21 @@
+{
+  "cartographyplus.page.expand": "Expand",
+  "cartographyplus.page.split": "Split",
+  "cartographyplus.page.reveal": "Reveal",
+  "cartographyplus.button.reveal": "Reveal %s lv",
+  "cartographyplus.result.split": "%s maps",
+  "cartographyplus.revealed_name": "Revealed Map",
+  "cartographyplus.scan.done": "Wide eye: %s hostiles glowing, %s containers highlighted",
+  "cartographyplus.scan.chest": "Container",
+  "cartographyplus.anchor.0": "Vanilla",
+  "cartographyplus.anchor.1": "Player",
+  "cartographyplus.anchor.2": "TL",
+  "cartographyplus.anchor.3": "TR",
+  "cartographyplus.anchor.4": "BL",
+  "cartographyplus.anchor.5": "BR",
+  "cartographyplus.button.reveal_short": "Reveal",
+  "cartographyplus.reveal.busy": "Another map is already being revealed",
+  "cartographyplus.reveal.started": "The wide eye starts scanning %s chunks",
+  "cartographyplus.reveal.done": "Reveal finished, %s pixels filled",
+  "item.cartographyplus.wide_eye": "Wide Eye"
+}
