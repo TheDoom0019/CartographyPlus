@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '1.0.11'
+}
+
+version = '0.13.8'
+group = 'com.mcm.cartographyplus'
+
+base {
+    archivesName = 'cartographyplus'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = '21.1.267'
+
+    runs {
+        client {
+            client()
+        }
+    }
+
+    mods {
+        cartographyplus {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    maven {
+        name = 'NeoForged'
+        url = 'https://neoforged.forgecdn.net/releases'
+    }
+    maven {
+        name = 'NeoForgedMojangMeta'
+        url = 'https://neoforged.forgecdn.net/mojang-meta'
+    }
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
