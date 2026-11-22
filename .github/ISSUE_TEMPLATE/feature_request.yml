@@ -1,0 +1,23 @@
+name: 功能建议 / Feature request
+description: 想要的新功能或改动
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: 你想要什么
+      placeholder: "希望揭示能选择只补全某个方向的一半"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么需要
+      description: 使用场景，或者现在哪里不方便
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你设想的实现（可选）
