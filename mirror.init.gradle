@@ -1,0 +1,25 @@
+// Rewrites repositories pointing at maven.neoforged.net (blocked by DNS pollution here)
+// to the ForgeCDN mirror, keeping the path (/releases, /mojang-meta).
+def rewrite = { repo ->
+    if (repo instanceof org.gradle.api.artifacts.repositories.MavenArtifactRepository) {
+        def u = repo.url.toString()
+        if (u.contains('maven.neoforged.net') || u.contains('bmclapi2.bangbang93.com/maven')) {
+            def path = u.contains('mojang-meta') ? 'mojang-meta' : 'releases'
+            def rest = u.substring(u.indexOf(path) + path.length(), u.length())
+            if (!rest.startsWith('/')) rest = '/' + rest
+            repo.setUrl('https://neoforged.forgecdn.net/' + path + rest)
+            println "[mirror] " + u + " -> " + repo.url
+        }
+    }
+}
+
+gradle.settingsEvaluated { s ->
+    s.dependencyResolutionManagement.repositories.all(rewrite)
+    s.pluginManagement.repositories.all(rewrite)
+}
+
+gradle.projectsLoaded {
+    gradle.rootProject.allprojects { p ->
+        p.repositories.all(rewrite)
+    }
+}
